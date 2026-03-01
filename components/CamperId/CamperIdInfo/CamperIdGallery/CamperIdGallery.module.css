@@ -1,0 +1,15 @@
+.camperIdGalleryContainer {
+  display: flex;
+  gap: 48px;
+}
+
+.camperIdGalleryItem {
+  width: 292px;
+  height: 312px;
+}
+
+.image {
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+}

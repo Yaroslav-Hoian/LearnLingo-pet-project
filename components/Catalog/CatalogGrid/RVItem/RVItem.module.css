@@ -1,0 +1,41 @@
+.rvItem {
+  display: flex;
+  gap: 24px;
+  border: 1px solid var(--gray-light);
+  border-radius: 20px;
+  padding: 23px;
+}
+
+.rvImageWrapper {
+  width: 292px;
+  height: 320px;
+}
+
+.rvImage {
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.rvInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.rvItemBtn {
+  max-width: 166px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: var(--white);
+  border-radius: 200px;
+  background-color: var(--button);
+  padding: 16px 40px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.rvItemBtn:hover,
+.rvItemBtn:focus {
+  background-color: var(--button-hover);
+}

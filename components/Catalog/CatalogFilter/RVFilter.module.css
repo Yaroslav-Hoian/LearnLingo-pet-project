@@ -1,0 +1,60 @@
+.sidebarForm {
+  width: 360px;
+}
+
+.filtersContainer {
+  margin: 40px 0 40px 0;
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+}
+
+.filtersTitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+.formBtnBox {
+  display: flex;
+  gap: 14px;
+}
+
+.formBtnSubmit {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: var(--white);
+  padding: 16px 56.5px;
+  border-radius: 200px;
+  background-color: var(--button);
+  margin-top: 40px;
+  transition: background-color 300ms ease-in-out;
+}
+
+.formBtnSubmit:hover,
+.formBtnSubmit:focus {
+  background-color: var(--button-hover);
+}
+
+.formBtnReset {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  padding: 16px 56.5px;
+  border-radius: 200px;
+  border: 1px solid var(--white);
+  background-color: inherit;
+  margin-top: 40px;
+  background-color: var(--badges);
+  mix-blend-mode: multiply;
+  transition: border-color 300ms ease-in-out;
+}
+
+.formBtnReset:hover,
+.formBtnReset:focus {
+  border-color: var(--button);
+}

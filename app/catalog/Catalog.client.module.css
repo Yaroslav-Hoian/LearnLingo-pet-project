@@ -1,0 +1,31 @@
+.catalogClientContainer {
+  display: flex;
+  width: 1440px;
+  padding: 48px 64px 52px 64px;
+  gap: 64px;
+  margin: 0 auto;
+}
+
+.catalogClientSubContent {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.loadMoreBtn {
+  margin: 0 auto;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  padding: 16px 32px;
+  border: 1px solid var(--gray-light);
+  border-radius: 200px;
+  background-color: inherit;
+  transition: border-color 300ms ease-in-out;
+}
+
+.loadMoreBtn:hover,
+.loadMoreBtn:focus {
+  border-color: var(--button-hover);
+}

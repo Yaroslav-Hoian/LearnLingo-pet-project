@@ -1,0 +1,70 @@
+.rvInfoHeader {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.rvInfoTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.rvName {
+  font-size: 24px;
+  line-height: 1.33;
+}
+
+.rvPriceWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.rvPrice {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+}
+.favoriteButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+}
+
+.favoriteIcon {
+  fill: var(--main);
+}
+
+.active {
+  fill: var(--button);
+}
+
+.rvInfoReviewrsLocation {
+  display: flex;
+  gap: 16px;
+}
+
+.rvInfoReviewrsLocationWrapper {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.rvInfoReviewrsLocationText {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.underline {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+
+.starFilled {
+  fill: var(--rating);
+}
