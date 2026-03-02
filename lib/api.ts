@@ -1,19 +1,25 @@
-import { RV, RVFilterParams } from "@/types/RV";
-import axios from "axios";
+import { db } from "./firebase";
+import { get, ref } from "firebase/database";
+import { Teacher } from "@/types/teacher";
 
-axios.defaults.baseURL = "https://66b1f8e71ca8ad33d4f5f63e.mockapi.io/campers";
+// type Filters = {
+//   language?: string;
+//   level?: string;
+//   maxPrice?: number;
+//   lastDoc?: QueryDocumentSnapshot<DocumentData> | null;
+// };
 
-interface fetchRV {
-  total: number;
-  items: RV[];
-}
-
-export async function fetchRV(filter: RVFilterParams): Promise<fetchRV> {
-  const response = await axios.get<fetchRV>("", { params: filter });
-  return response.data;
-}
-
-export async function fetchRVById(id: string): Promise<RV> {
-  const res = await axios.get<RV>("" + "/" + id);
-  return res.data;
+export async function getTeachers(fillter?) {
+  try {
+    const snapshot = await get(ref(db, "/"));
+    if (snapshot.exists()) {
+      const data: Teacher[] = snapshot.val();
+      return data;
+    } else {
+      return [];
+    }
+  } catch (error) {
+    console.error("Error fetching teachers:", error);
+    return [];
+  }
 }

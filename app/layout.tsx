@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import "modern-normalize/modern-normalize.css";
-import Header from "@/components/Header/Header";
+// import Header from "@/components/Header/Header";
+// import { Toaster } from "react-hot-toast";
 import TanStackProvider from "@/components/TanStackProvider/TanStackProvider";
-import { Toaster } from "react-hot-toast";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -41,8 +41,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable}`}>
         <TanStackProvider>
-          <Header />
-          <Toaster toastOptions={{ duration: 3500 }} />
+          {/* <Header /> */}
+          {/* <Toaster toastOptions={{ duration: 3500 }} /> */}
           <main>{children}</main>
         </TanStackProvider>
       </body>
