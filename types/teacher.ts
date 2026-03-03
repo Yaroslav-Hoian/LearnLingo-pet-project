@@ -1,10 +1,11 @@
-interface TeacherReview {
+export interface TeacherReview {
   reviewer_name: string;
   reviewer_rating: number;
   comment: string;
 }
 
 export interface Teacher {
+  id: string;
   name: string;
   surname: string;
   languages: string[];
